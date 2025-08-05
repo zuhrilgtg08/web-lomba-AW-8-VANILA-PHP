@@ -18,15 +18,15 @@ switch ($aksi) {
         $tm = @$_POST['tm'];
         $final = @$_POST['final'];
 
-        $query = "UPDATE tl_ltf SET tgl_daftar='$daftar', tgl_penyisihan='$penyisihan', tgl_lolos='$lolos', tgl_tm='$tm', tgl_final='$final' WHERE id='$id'";
+        $query = "UPDATE tl_lf SET tgl_daftar='$daftar', tgl_penyisihan='$penyisihan', tgl_lolos='$lolos', tgl_tm='$tm', tgl_final='$final' WHERE id='$id'";
         if ($kon->kueri($query)) {
-            header("Location: tl_ltf.php?status=success");
+            header("Location: tl_lf.php?status=success");
         } else {
-            header("Location: tl_ltf.php?status=error");
+            header("Location: tl_lf.php?status=error");
         }
         break;
 
     default:
-        header("Location: tl_ltf.php");
+        header("Location: tl_lf.php");
         break;
 }

@@ -16,8 +16,8 @@ if ($lomba == 'plc') {
     $get_parameter = '?lomba=lkti';
 } elseif ($lomba == 'ffr') {
     $get_parameter = '?lomba=ffr';
-} elseif($lomba == 'ltf') {
-    $get_parameter = '?lomba=ltf';
+} elseif($lomba == 'lf') {
+    $get_parameter = '?lomba=lf';
 }
 
 $abc = $kon->kueri("SELECT lp.`id_peserta`, lp.`nama_tim`, lp.`nama`, lp.`nama_anggota1`, lp.`nama_anggota2`, lp.`sekolah`, lp.`email`, lp.`telp`, lp.`pass`, lp.`jenis_lomba`, lp.`bidanglomba`, lp.`judul_abstrak`, lp.`proses`, b.*

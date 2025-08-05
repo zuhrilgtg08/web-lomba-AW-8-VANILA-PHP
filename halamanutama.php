@@ -569,7 +569,7 @@ $event_description = "Automation Week merupakan event tahunan terbesar dari Himp
         <div class="row">
             <div class="col-lg-3">
                 <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="image/infolomba.jpg" alt="..." />
+                    <img class="mx-auto rounded-circle" src="image/awlogo.png" alt="..." />
                     <h6>Info.lomba</h6>
                 </div>
             </div>

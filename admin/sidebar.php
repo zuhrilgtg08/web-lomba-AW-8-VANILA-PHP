@@ -113,21 +113,21 @@
                 <i class="fas fa-stream"></i>
                 <span>Daftar Peserta</span></a>
         </li>
-    <?php } else if($sesi == 'admin_ltf') { ?>
+    <?php } else if($sesi == 'admin_lf') { ?>
         <li class="nav-item">
-            <a class="nav-link" href="tl_ltf.php">
+            <a class="nav-link" href="tl_lf.php">
                 <i class="fas fa-stream"></i>
-                <span>Time Line LTF</span></a>
+                <span>Time Line LF</span></a>
         </li>
 
         <li class="nav-item">
             <a class="nav-link" href="peserta.php">
                 <i class="fas fa-users"></i>
-                <span>Daftar Peserta LTF</span></a>
+                <span>Daftar Peserta LF</span></a>
         </li>
 
         <li class="nav-item">
-            <!-- <a class="nav-link" href="pointltf.php"> -->
+            <!-- <a class="nav-link" href="pointlf.php"> -->
             <a class="nav-link" href="#">
                 <i class="fas fa-chart-bar"></i>
                 <span>Tambahkan Point</span></a>

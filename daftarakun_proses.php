@@ -3,6 +3,8 @@
     $kon = new Koneksi();
     $create = @$_REQUEST['create'];
     $nama = @$_POST['tnama'];
+    $nama_anggota_1 = @$_POST['tnama_anggota_1'];
+    $nama_anggota_2 = @$_POST['tnama_anggota_2'];
     $namatim = @$_POST['tnamatim'];
     $sekolah = @$_POST['tsekolah'];
     $email = @$_POST['temail'];
@@ -28,7 +30,8 @@
     switch ($create) {
         case 'daftar':
 
-            $abc = $kon->kueri("INSERT INTO login_peserta(id_peserta, nama_tim, nama,sekolah, email, telp, pass, jenis_lomba,proses) VALUES (NULL, '$namatim','$nama', '$sekolah', '$email' ,'$no', MD5('$pass'), '$lomba' , '0')");
+            $abc = $kon
+                ->kueri("INSERT INTO login_peserta(id_peserta, nama_tim, nama, nama_anggota1, nama_anggota2, sekolah, email, telp, pass, jenis_lomba,proses) VALUES (NULL, '$namatim','$nama', '$nama_anggota_1', '$nama_anggota_2', '$sekolah', '$email' ,'$no', MD5('$pass'), '$lomba' , '0')");
 
             if ($abc == TRUE) {
                 echo "<script>alert('Daftar Sukses!!!')</script>";

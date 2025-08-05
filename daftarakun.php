@@ -62,14 +62,14 @@
                             <i class="fa fa-id-card-o" aria-hidden="true"></i></span>
                     </div>
                     <div class="wrap-input100 validate-input">
-                        <input class="input100" id="inputFname" name="tnama" type="text" placeholder="Nama Anggota 1" required>
+                        <input class="input100" id="inputFname" name="tnama_anggota_1" type="text" placeholder="Nama Anggota 1" required>
                         <span class="focus-input100"></span>
                         <span class="symbol-input100">
                             <i class="fa fa-id-card-o" aria-hidden="true"></i></span>
                     </div>
 
                     <div class="wrap-input100 validate-input">
-                        <input class="input100" id="inputFname" name="tnama" type="text" placeholder="Nama Anggota 2" required>
+                        <input class="input100" id="inputFname" name="tnama_anggota_2" type="text" placeholder="Nama Anggota 2" required>
                         <span class="focus-input100"></span>
                         <span class="symbol-input100">
                             <i class="fa fa-id-card-o" aria-hidden="true"></i></span>
@@ -106,7 +106,7 @@
                             <option value="lkti">LKTI</option>
                             <option value="ffr">FFR</option>
                             <option value="plc">PLC</option>
-                            <option value="ltf">LTF</option>
+                            <option value="lf">LF</option>
                         </select>
                         <!-- <p class="text-danger my-3">Pendaftaran PLC telah ditutup. Terima Kasih Atas Partisipasi Anda</p> -->
                     </div>

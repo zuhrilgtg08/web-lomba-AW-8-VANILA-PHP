@@ -35,7 +35,7 @@ if (!isset($_SESSION["email_admin"])) {
           <?php 
           include "koneksi.php";
           $kon = new Koneksi();
-          $abc = $kon->kueri("SELECT * FROM tl_ltf WHERE id = '1' ");
+          $abc = $kon->kueri("SELECT * FROM tl_lf WHERE id = '1' ");
           $data = $kon->hasil_data($abc);
 
           // Set default 
@@ -56,7 +56,7 @@ if (!isset($_SESSION["email_admin"])) {
             }
           ?>
 
-          <form name="form_edit" method="POST" action="tlltf_proses.php" enctype="multipart/form-data">
+          <form name="form_edit" method="POST" action="tllf_proses.php" enctype="multipart/form-data">
             <input type="hidden" name="aksi" id="aksi" value="edit"/>
             <input type="hidden" name="hid" id="hid" value="<?php echo $data['id']; ?>"/>
             <div class="row justify-content-center">
@@ -68,7 +68,7 @@ if (!isset($_SESSION["email_admin"])) {
                       <div class="col-lg">
                         <div class="p-5">
                             <div class="text-center">
-                                <h1 class="h4 text-gray-900 mb-4">Edit Jadwal Lomba LTF</h1>
+                                <h1 class="h4 text-gray-900 mb-4">Edit Jadwal Lomba LF</h1>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-4">
