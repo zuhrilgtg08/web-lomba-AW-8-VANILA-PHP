@@ -1,0 +1,34 @@
+[20-Oct-2023 08:36:55 UTC] PHP Warning:  Undefined variable $kon in /home/autw8743/public_html/home/plc/plc.php on line 14
+[20-Oct-2023 08:36:55 UTC] PHP Fatal error:  Uncaught Error: Call to a member function kueri() on null in /home/autw8743/public_html/home/plc/plc.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/autw8743/public_html/home/plc/plc.php on line 14
+[20-Oct-2023 08:36:56 UTC] PHP Warning:  Undefined variable $kon in /home/autw8743/public_html/home/plc/plc.php on line 14
+[20-Oct-2023 08:36:56 UTC] PHP Fatal error:  Uncaught Error: Call to a member function kueri() on null in /home/autw8743/public_html/home/plc/plc.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/autw8743/public_html/home/plc/plc.php on line 14
+[20-Oct-2023 08:36:56 UTC] PHP Warning:  Undefined variable $plc in /home/autw8743/public_html/home/plc/timeline.php on line 13
+[20-Oct-2023 08:36:56 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/autw8743/public_html/home/plc/timeline.php on line 13
+[20-Oct-2023 08:36:56 UTC] PHP Warning:  Undefined variable $plc in /home/autw8743/public_html/home/plc/timeline.php on line 22
+[20-Oct-2023 08:36:56 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/autw8743/public_html/home/plc/timeline.php on line 22
+[20-Oct-2023 08:36:56 UTC] PHP Warning:  Undefined variable $plc in /home/autw8743/public_html/home/plc/timeline.php on line 31
+[20-Oct-2023 08:36:56 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/autw8743/public_html/home/plc/timeline.php on line 31
+[20-Oct-2023 08:36:56 UTC] PHP Warning:  Undefined variable $plc in /home/autw8743/public_html/home/plc/timeline.php on line 40
+[20-Oct-2023 08:36:56 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/autw8743/public_html/home/plc/timeline.php on line 40
+[20-Oct-2023 08:36:56 UTC] PHP Warning:  Undefined variable $plc in /home/autw8743/public_html/home/plc/timeline.php on line 49
+[20-Oct-2023 08:36:56 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/autw8743/public_html/home/plc/timeline.php on line 49
+[20-Oct-2023 08:36:56 UTC] PHP Warning:  Undefined variable $plc in /home/autw8743/public_html/home/plc/timeline.php on line 58
+[20-Oct-2023 08:36:56 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/autw8743/public_html/home/plc/timeline.php on line 58
+[20-Oct-2023 08:36:56 UTC] PHP Warning:  Undefined variable $plc in /home/autw8743/public_html/home/plc/timeline.php on line 13
+[20-Oct-2023 08:36:56 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/autw8743/public_html/home/plc/timeline.php on line 13
+[20-Oct-2023 08:36:56 UTC] PHP Warning:  Undefined variable $plc in /home/autw8743/public_html/home/plc/timeline.php on line 22
+[20-Oct-2023 08:36:56 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/autw8743/public_html/home/plc/timeline.php on line 22
+[20-Oct-2023 08:36:56 UTC] PHP Warning:  Undefined variable $plc in /home/autw8743/public_html/home/plc/timeline.php on line 31
+[20-Oct-2023 08:36:56 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/autw8743/public_html/home/plc/timeline.php on line 31
+[20-Oct-2023 08:36:56 UTC] PHP Warning:  Undefined variable $plc in /home/autw8743/public_html/home/plc/timeline.php on line 40
+[20-Oct-2023 08:36:56 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/autw8743/public_html/home/plc/timeline.php on line 40
+[20-Oct-2023 08:36:56 UTC] PHP Warning:  Undefined variable $plc in /home/autw8743/public_html/home/plc/timeline.php on line 49
+[20-Oct-2023 08:36:56 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/autw8743/public_html/home/plc/timeline.php on line 49
+[20-Oct-2023 08:36:56 UTC] PHP Warning:  Undefined variable $plc in /home/autw8743/public_html/home/plc/timeline.php on line 58
+[20-Oct-2023 08:36:56 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/autw8743/public_html/home/plc/timeline.php on line 58
