@@ -183,17 +183,25 @@ if (isset($_POST['lktitidak'])) {
                                                             $idcek = $data['id_peserta'];
                                                             $cek = $kon->kueri("SELECT jenis_lomba FROM login_peserta WHERE id_peserta = '$idcek' ");
                                                             $lombaa = $kon->hasil_data($cek);
-                                                            $lomba = $lombaa['jenis_lomba']; 
+                                                            $lomba = '';
+                                                            if ($lombaa) {
+                                                                $lomba = $lombaa['jenis_lomba'];
+                                                            }
+                                                            
                                                             if ($lomba == 'lkti') {
-                                                            if ($data['proses'] < '4' ) { echo '<span class="badge badge-danger">Belum Tersetujui</span>' ; } elseif ($data['proses']> '4') {
-                                                                echo '<span class="badge badge-primary">Tersetujui</span>';
-                                                                }
-                                                                } else {
-                                                                if ($data['proses'] < '1' ) { echo '<span class="badge badge-danger">Belum Tersetujui</span>' ; } elseif ($data['proses']> '1') {
+                                                                if ($data['proses'] < '4') {
+                                                                    echo '<span class="badge badge-danger">Belum Tersetujui</span>';
+                                                                } elseif ($data['proses'] > '4') {
                                                                     echo '<span class="badge badge-primary">Tersetujui</span>';
-                                                                    }
-                                                                    }
-                                                                    ?>
+                                                                }
+                                                            } else {
+                                                                if ($data['proses'] < '1') {
+                                                                    echo '<span class="badge badge-danger">Belum Tersetujui</span>';
+                                                                } elseif ($data['proses'] > '1') {
+                                                                    echo '<span class="badge badge-primary">Tersetujui</span>';
+                                                                }
+                                                            }
+                                                            ?>
                                                         </td>
 
                                                         <td>
@@ -201,31 +209,33 @@ if (isset($_POST['lktitidak'])) {
 
                                                             <?php if ($lomba == 'lkti') { ?>
                                                                 <form action="" method="post">
-                                                                    <!-- Include a hidden input field for id_peserta -->
                                                                     <input type="hidden" name="id_peserta" value="<?= $data['id_peserta'] ?>">
                                                                     <?php
                                                                     $id = $data['id_peserta'];
                                                                     $cek = $kon->kueri("SELECT proses FROM login_peserta WHERE id_peserta = '$id' ");
-                                                                    $data = $kon->hasil_data($cek);
-                                                                    if ($data['proses'] == '3') {
-                                                                        echo '<input type="submit" name="lkti" class="btn btn-primary btn-sm" value="Setujui"> ';
-                                                                    } else if ($data['proses'] > '3') {
-                                                                        echo '<input type="submit" name="lktitidak" class="btn btn-danger" value="Tidak Setuju"> ';
+                                                                    $result = $kon->hasil_data($cek);
+                                                                    if ($result) {
+                                                                        if ($result['proses'] == '3') {
+                                                                            echo '<input type="submit" name="lkti" class="btn btn-primary btn-sm" value="Setujui"> ';
+                                                                        } else if ($result['proses'] > '3') {
+                                                                            echo '<input type="submit" name="lktitidak" class="btn btn-danger" value="Tidak Setuju"> ';
+                                                                        }
                                                                     }
                                                                     ?>
                                                                 </form>
                                                             <?php } else { ?>
                                                                 <form action="" method="post">
-                                                                    <!-- Include a hidden input field for id_peserta -->
                                                                     <input type="hidden" name="id_peserta" value="<?= $data['id_peserta'] ?>">
                                                                     <?php
                                                                     $id = $data['id_peserta'];
                                                                     $cek = $kon->kueri("SELECT proses FROM login_peserta WHERE id_peserta = '$id' ");
-                                                                    $data = $kon->hasil_data($cek);
-                                                                    if ($data['proses'] == '1') {
-                                                                        echo '<input type="submit" name="setuju" class="btn btn-primary" value="Setujui"> ';
-                                                                    } else if ($data['proses'] > '1') {
-                                                                        echo '<input type="submit" name="tidaksetuju" class="btn btn-danger" value="Tidak Setuju"> ';
+                                                                    $result = $kon->hasil_data($cek);
+                                                                    if ($result) {
+                                                                        if ($result['proses'] == '1') {
+                                                                            echo '<input type="submit" name="setuju" class="btn btn-primary" value="Setujui"> ';
+                                                                        } else if ($result['proses'] > '1') {
+                                                                            echo '<input type="submit" name="tidaksetuju" class="btn btn-danger" value="Tidak Setuju"> ';
+                                                                        }
                                                                     }
                                                                     ?>
                                                                 </form>
