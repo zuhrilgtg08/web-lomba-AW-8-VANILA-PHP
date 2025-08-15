@@ -56,12 +56,13 @@ ini_set('display_errors', '1');
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
             <div>
-                <div class="rounded-circle-container">
-                    <img class="rounded-circle img-fluid" src="image/ppns1.jpg" alt="..." />
-                    <img class="rounded-circle img-fluid" src="image/LOGO BLU_SPEEDCIRCLE.png" alt="..." />
-                    <img class="rounded-circle img-fluid" src="image/Ikon Logo Dies Natalis 37 PPNS_No BG.png" alt="..." />
-                    <img class="rounded-circle img-fluid" src="image/hima.jpg" alt="..." />
-                    <img class="rounded-circle img-fluid" src="image/logo-aw.png" alt="..." />
+                <div class="rounded-circle-container d-flex align-items-center">
+                <img class="rounded-circle img-fluid mr-2" src="image/ppns1.jpg" alt="PPNS" style="width: 40px; height: 40px;"/>
+                <img class="rounded-circle img-fluid mr-2" src="image/DIKTI.png" alt="DIKTI" style="width: 40px; height: 40px;"/>
+                <img class="rounded-circle img-fluid mr-2" src="image/LOGO BLU_SPEEDCIRCLE.png" alt="BLU" style="width: 40px; height: 40px;"/>
+                <img class="rounded-circle img-fluid mr-2" src="image/hima.jpg" alt="HIMA" style="width: 40px; height: 40px;"/>
+                <img class="rounded-circle img-fluid mr-2" src="image/BSO.png" alt="HIMA" style="width: 40px; height: 40px;"/>
+                <img class="rounded-circle img-fluid mr-2" src="image/logo-aw.png" alt="Automation Week" style="width: 40px; height: 40px;"/>
                 </div>
             </div>
             <a href="index.php" style="text-decoration: none; text-align: right; ">
@@ -130,7 +131,7 @@ ini_set('display_errors', '1');
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Automation Week VIII</h2>
-                    <h3 class="section-subheading text-muted">Automation Week merupakan event tahunan terbesar dari Himpunan Mahasiswa Teknik Otomasi Politeknik Perkapalan Negeri Surabaya. Pada Automation Week ke VII ini kompetisi yang akan dilombakan meliputi Lomba Karya Tulis Ilmiah (LKTI), Fire Fighting Roboboat (FFR), dan Programmable Logic Controller (PLC) tingkat SMA/SMK/MA sederajat dan berskala Nasional.
+                    <h3 class="section-subheading text-muted">Automation Week merupakan event tahunan terbesar dari Himpunan Mahasiswa Teknik Otomasi Politeknik Perkapalan Negeri Surabaya. Pada Automation Week ke VIII ini kompetisi yang akan dilombakan meliputi Lomba Karya Tulis Ilmiah (LKTI), Fire Fighting Roboboat (FFR), Programmable Logic Controller (PLC) dan Line Follower (LF) tingkat SMA/SMK/MA sederajat dan berskala Nasional.
 
                     </h3>
                 </div>
@@ -176,7 +177,7 @@ ini_set('display_errors', '1');
     <footer class="footer py-4" style="background-color : #D4ECDD;">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-4 text-lg-start">Copyright &copy; Automation Week 7</div>
+                <div class="col-lg-4 text-lg-start">Copyright &copy; Automation Week 8 </div>
                 <div class="col-lg-4 my-3 my-lg-0">
                     <a class="btn rounded-circle  btn-dark btn-social mx-2" href="https://www.youtube.com/channel/UCXepgfxFNcLQcMHgyTrykjw"><i class="fab fa-youtube"></i></a>
                     <a class="btn rounded-circle btn-dark btn-social mx-2" href="https://www.instagram.com/automationweek/"><i class="fab fa-instagram"></i></a>

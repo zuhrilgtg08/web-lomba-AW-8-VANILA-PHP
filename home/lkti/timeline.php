@@ -5,7 +5,8 @@
                     <h3 class="section-subheading text-muted">LKTI</h3>
                 </div>
                 <ul class="timeline">
-                    <li>
+                    
+                       <li class="timeline-inverted"> 
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="image/lkti/pendaftaran.png" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
@@ -14,7 +15,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="timeline-inverted">
+                    <li>
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="image/lkti/abstrak.png" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
@@ -23,7 +24,7 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="timeline-inverted">
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="image/lkti/pendaftaran2.png" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
@@ -88,7 +89,7 @@
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="image/LKTI_AW8.png" alt="..." /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="image/Circle Logo LKTI.png" alt="..." /></div>
                         <div class="timeline-panel">
 
                         </div>

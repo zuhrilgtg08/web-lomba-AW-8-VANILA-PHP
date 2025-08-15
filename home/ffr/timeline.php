@@ -88,7 +88,7 @@
                 </div>
             </li> -->
             <<li class="timeline-inverted">
-                <div class="timeline-image"><img class="rounded-circle img-fluid" src="image/FFR_AW8.png" alt="..." /></div>
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="image/Circle Logo FFR.png" alt="..." /></div>
                 <div class="timeline-panel">
 
                 </div>
