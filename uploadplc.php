@@ -22,7 +22,6 @@ $data = $kon->hasil_data($result);
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Automation Week - Upload</title>
-    <!-- Favicon-->
     <link href="image/logo-aw.png" rel="icon">
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>

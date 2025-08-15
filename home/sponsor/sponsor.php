@@ -41,15 +41,15 @@
                 </div>
                 <div class="col-lg-3">
                     <div class="team-member1">
-                        <img class="mx-auto rounded-circle" src="image/sponsor/mokko.jpg" alt="..." />
-                        <h6>PT. MOKKO INDONESIA</h6>
+                        <img class="mx-auto rounded-circle" src="image/awlogo.png" alt="..." />
+                        <h6>Sponsor</h6>
 
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <div class="team-member1">
-                        <img class="mx-auto rounded-circle" src="image/sponsor/bccustom.png" alt="..." />
-                        <h6>BC CUSTOM</h6>
+                        <img class="mx-auto rounded-circle" src="image/awlogo.png" alt="..." />
+                        <h6>Sponsor</h6>
                     </div>
                 </div>
 
