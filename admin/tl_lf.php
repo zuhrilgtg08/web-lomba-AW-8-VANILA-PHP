@@ -77,20 +77,20 @@ if (!isset($_SESSION["email_admin"])) {
     
                                 </div>
                                 <div class="form-group col-md-4">
-                                    <label for="penyisihan">Penyisihan</label>
-                                    <input type="text" class="form-control" id="penyisihan" name="penyisihan" value="<?php echo $data['tgl_penyisihan']; ?>" required>
+                                    <label for="penyisihan">Technical Meeting</label>
+                                    <input type="text" class="form-control" id="tm" name="tm" value="<?php echo $data['tgl_tm']; ?>" required>
     
                                 </div>
                                 <div class="form-group col-md-4">
-                                    <label for="lolos">Lolos</label>
-                                    <input type="text" class="form-control" id="lolos" name="lolos" value="<?php echo $data['tgl_lolos']; ?>" required>
+                                    <label for="lolos">Penyisihan</label>
+                                    <input type="text" class="form-control" id="penyisihan" name="penyisihan" value="<?php echo $data['tgl_penyisihan']; ?>" required>
     
                                 </div>
                             </div>
                             <div class="form row">
                                 <div class="form-group col-md-4">
-                                    <label for="tm">Technical Meeting</label>
-                                    <input type="text" class="form-control" id="tm" name="tm" value="<?php echo $data['tgl_tm']; ?>" required>
+                                    <label for="tm">Babak 8 Besar</label>
+                                    <input type="text" class="form-control" id="" name="tm" value="<?php echo $data['tgl_tm']; ?>" required>
     
                                 </div>
                                 <div class="form-group col-md-4">

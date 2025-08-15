@@ -83,6 +83,13 @@
                 <i class="fas fa-stream"></i>
                 <span>Time Line LKTI</span></a>
         </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="lkti_file.php">
+                <i class="fas fa-download"></i>
+                <span>Download File LKTI</span></a>
+        </li>
+
           <li class="nav-item">
                 <a class="nav-link" href="lktipenilaian.php">
                  <i class="fas fa-download"></i>

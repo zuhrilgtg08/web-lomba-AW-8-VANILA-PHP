@@ -20,11 +20,12 @@ $nilaiplc = $kon->kueri("SELECT * FROM aksiupload WHERE id = '1' ");
 $umumplc = $kon->hasil_data($nilaiplc);
 $xyz = $kon->kueri(" SELECT * FROM tb_point WHERE seleksi = 'seleksi1' ORDER BY points DESC ");
 $jumlah1 = $kon->jumlah_data($xyz);
-$point = $_SESSION['jenislomba'];
+$point = isset($_SESSION['jenislomba']) ? $_SESSION['jenislomba'] : '';
 $qwe = $kon->kueri("SELECT * FROM pengumuman_lkti");
 $jumlahlolos = $kon->jumlah_data($qwe);
-$lolos = $_SESSION['jenislomba'];
+$lolos = isset($_SESSION['jenislomba']) ? $_SESSION['jenislomba'] : '';
 ini_set('display_errors', '1');
+// die;
 ?>
 
 <!DOCTYPE html>
@@ -53,7 +54,7 @@ ini_set('display_errors', '1');
 
 <body id="page-top">
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <nav style="background-color: #BC0301;" class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
             <div>
                 <div class="rounded-circle-container d-flex align-items-center">
