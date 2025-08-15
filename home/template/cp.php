@@ -6,51 +6,57 @@
         </div>
 
         <form>
-
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-4">
                     <div style="text-align: center;">
-                        <label for="exampleFormControlInput1">M. Chariz Zaqi Al Ally</label>
+                        <label for="exampleFormControlInput1">KELVIN</label>
                         <div>
-                            <a href="https://api.whatsapp.com/send/?phone=%2B6288803072730&text&app_absent=0" style="color: blue; text-decoration: none;" target="_blank">
-                                <p>088803072730</p>
+                            <a href="https://api.whatsapp.com/send/?phone=%2B6285732166062&text&app_absent=0" style="color: blue; text-decoration: none;" target="_blank">
+                                <p>085732166062</p>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-4">
                     <div style="text-align: center;">
-                        <label for="exampleFormControlInput1">Moh. Faiz Dwi Hermawan (PLC)</label>
+                        <label for="exampleFormControlInput1">ABEL (PLC)</label>
                         <div>
-                            <a href="https://api.whatsapp.com/send/?phone=%2B6282139877035&text&app_absent=0" style="color: blue; text-decoration: none;" target="_blank">
-                                <p>082139877035</p>
+                            <a href="https://api.whatsapp.com/send/?phone=%2B6281998282954&text&app_absent=0" style="color: blue; text-decoration: none;" target="_blank">
+                                <p>081998282954</p>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-4">
                     <div style="text-align: center;">
-                        <label for="exampleFormControlInput1">Ida Bagus Arya Kusuma Ardhana (FFR)</label>
+                        <label for="exampleFormControlInput1">KHALFI (FFR)</label>
                         <div>
-                            <a href="https://api.whatsapp.com/send/?phone=%2B6288801571364&text&app_absent=0" style="color: blue; text-decoration: none;" target="_blank">
-                                <p>088801571364</p>
+                            <a href="https://api.whatsapp.com/send/?phone=%2B6289699308394&text&app_absent=0" style="color: blue; text-decoration: none;" target="_blank">
+                                <p>089699308394</p>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-6">
                     <div style="text-align: center;">
-                        <label for="exampleFormControlInput1">Tsamarah Dwi Marsheilla (LKTI)</label>
+                        <label for="exampleFormControlInput1">HANI YUSNI (LKTI)</label>
                         <div>
-                            <a href="https://api.whatsapp.com/send/?phone=%2B6281229664870&text&app_absent=0" style="color: blue; text-decoration: none;" target="_blank">
-                                <p>081229664870</p>
+                            <a href="https://api.whatsapp.com/send/?phone=%2B6285731943835&text&app_absent=0" style="color: blue; text-decoration: none;" target="_blank">
+                                <p>085731943835</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div style="text-align: center;">
+                        <label for="exampleFormControlInput1">EMIR SOLEHAH (LF)</label>
+                        <div>
+                            <a href="https://api.whatsapp.com/send/?phone=%2B6283857988483&text&app_absent=0" style="color: blue; text-decoration: none;" target="_blank">
+                                <p>083857988483</p>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-
         </form>
 </section>
