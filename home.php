@@ -117,14 +117,14 @@ ini_set('display_errors', '1');
 
     <!-- Reigistrasi-->
     <?php
-    // $idpeserta = $_SESSION['email_peserta'];
-    // $bayar = $kon->kueri("SELECT * FROM login_peserta WHERE id_peserta = '$idpeserta' ");
-    // $data = $kon->hasil_data($bayar);
-    // $proses = $data['proses'];
-    // if ($proses == 0 || $proses == 1 || $proses == 2 || $proses == 3) {
-    //     include_once 'home/pembayaran/uploadbukti.php';
-    // } else {
-        //
+    $idpeserta = $_SESSION['email_peserta'];
+    $bayar = $kon->kueri("SELECT * FROM login_peserta WHERE id_peserta = '$idpeserta' ");
+    $data = $kon->hasil_data($bayar);
+    $proses = $data['proses'];
+    if ($proses == 0 || $proses == 1 || $proses == 2 || $proses == 3) {
+        include_once 'home/pembayaran/uploadbukti.php';
+    } else 
+        
     ?>
 
 

@@ -5,9 +5,9 @@
     <h4 class="my-3">FFR</h4>
     <p class="text-muted">Fire Fighting Roboboat merupakan perlombaan kapal tanpa awak yang bergerak secara otomatis dan memiliki misi untuk memadamkan api.</p><br>
     <span>
-         <a class="btn btn-danger" href="https://bit.ly/FormPendaftaranFFRAW5" target="_blank" role="button">Daftar FFR</a>
+         <!-- <a class="btn btn-danger" href="https://bit.ly/FormPendaftaranFFRAW5" target="_blank" role="button">Daftar FFR</a> -->
          <a href="uploadffr.php" class="btn btn-info">Upload File</a> 
-        <a class="btn btn-primary" href="soalplc/seleksi1.pdf" role="button" target="_blank">Pengumuman Penilaian FFR Tahap 1</a>
+         <!-- <a class="btn btn-primary" href="soalplc/seleksi1.pdf" role="button" target="_blank">Pengumuman Penilaian FFR Tahap 1</a> -->
 
     </span>
 
