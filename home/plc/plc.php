@@ -4,10 +4,10 @@
     </span>
     <h4 class="my-3">PLC</h4>
     <p class="text-muted">Programmable Logic Controller merupakan jenis lomba yang bertujuan untuk mengasah logika dan kemampuan siswa dalam bidang pemrograman PLC. </p><br>
-     <div>
+     <!-- <div>
         <a class="btn btn-danger" href="https://docs.google.com/forms/d/15uDbrxcXENzhdO84lt0_2Ow9Miw4OyuISNaJNKwdIQw/viewform?edit_requested=true" target="_blank" role="button">Daftar PLC</a>
-        <a href="uploadplc.php" class="btn btn-info">Upload File</a> -->
-    </div> 
+        <a href="uploadplc.php" class="btn btn-info">Upload File</a> 
+    </div>  -->
 </div>
 
 <?php
@@ -161,6 +161,7 @@ $isi = $kon->jumlah_data($upload);
     </section>
 <?php } ?>
 <?php if ($isi == 1) : ?>
+    <?php die; ?>
     <section class="page-section" id="upload" style="background-color: #E9ECF;">
         <div class="container">
             <div class="text-center">
