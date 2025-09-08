@@ -3,6 +3,7 @@ if (!isset($_SESSION['email_peserta'])) {
     header('Location: halamanutama.php');
     exit;
 }
+
 $varpeserta = $_SESSION['email_peserta'];
 $varbayar = $kon->kueri("SELECT * FROM login_peserta WHERE id_peserta = '$varpeserta' ");
 $databayar = $kon->hasil_data($varbayar);
@@ -62,10 +63,12 @@ if (isset($_POST['bayar'])) {
             } else {
                 $updateProses = $kon->kueri("UPDATE login_peserta SET proses = 1 WHERE id_peserta = '$varpeserta'");
             }
-            header("Location: index.php");
+            // header("Location: index.php");
+            echo '<meta http-equiv="refresh" content="0;url=index.php">';
             exit();
-        }
-    } else {
+            }
+        } 
+        else {
         // Berkas tidak valid
         echo '<script>alert("Hanya file PDF, JPG, dan PNG yang diizinkan.");</script>';
     }
@@ -175,7 +178,7 @@ if (isset($_POST['submitlkti'])) {
     VALUES ('$varpeserta','$nama_tim','$email','$nama_ketua','$lokasi_simpan_kartu_pelajar','$lokasi_simpan_follow_instagram','$lokasi_simpan_upload_twibbon','$lokasi_simpan_abstrak')");
     if ($updatebukti == TRUE) {
         $updateProses = $kon->kueri("UPDATE login_peserta SET proses = 1 WHERE id_peserta = '$varpeserta'");
-        header("Location: index.php");
+        echo '<script>window.location.href = "index.php";</script>';
         exit();
     }
 }
@@ -192,6 +195,8 @@ if (isset($_POST['finalsubmit'])) {
     $anggota1  = htmlspecialchars($_POST['anggota1']);
     if ($lomba == 'lkti' || $lomba == 'ffr') {
         $anggota2  = htmlspecialchars($_POST['anggota2']);
+    } elseif ($lomba == 'lf' || $lomba == 'plc') {
+        $anggota2 = '';
     }
 
     // Ambil data dari formulir
@@ -253,7 +258,9 @@ if (isset($_POST['finalsubmit'])) {
     $updatebukti = $kon->kueri("UPDATE tb_bukti SET buktikartu = '$lokasi_simpan_kartu_pelajar', buktifollow = '$lokasi_simpan_follow_instagram', buktitwiboon = '$lokasi_simpan_upload_twibbon' WHERE id_peserta = '$varpeserta'");
     if ($updatebukti == TRUE) {
         $updateProses = $kon->kueri("UPDATE login_peserta SET proses = 3 WHERE id_peserta = '$varpeserta'");
-        header("Location: index.php");
+     
+        // header("Location: index.php");
+        echo '<meta http-equiv="refresh" content="0;url=index.php">';
         exit();
     }
 }
@@ -324,9 +331,11 @@ if (isset($_POST['lktifullpaper'])) {
     $uploaddb =  $kon->kueri("UPDATE tb_bukti SET bukti = '$lokasi_simpan', filepaper = '$lokasi_simpan_fullpaper' WHERE id_peserta = '$varpeserta' ");
     $demo = $kon->kueri("UPDATE login_peserta SET demo = '$demo' WHERE id_peserta = '$varpeserta' ");
     if ($uploaddb == TRUE) {
-        $updateProses = $kon->kueri("UPDATE login_peserta SET proses = 3 WHERE id_peserta = '$varpeserta'");
-        header("Location: index.php");
-        exit();
+          
+        $updateProses = $kon->kueri("UPDATE login_peserta SET proses = 3 WHERE id_peserta = '$varpeserta'"); 
+        // die;
+        
+       echo '<meta http-equiv="refresh" content="0;url=index.php">';
     }
 }
 
@@ -355,8 +364,6 @@ if (isset($_POST['lktifullpaper'])) {
                             <div class="form-group mb-3">
                                 <input type="text" class="form-control" name="anggota2" placeholder="Nama Anggota 2">
                             </div>
-
-
                         </div>
                     </div>
 
@@ -469,6 +476,8 @@ if (isset($_POST['lktifullpaper'])) {
                                             echo "150.000,00";
                                         } else if ($lomba == 'lkti') {
                                             echo "100.000,00";
+                                        } else if($lomba == 'lf') {
+                                            echo "180.000,00";
                                         }
                                         ?>
                                     per tim</b></p>
@@ -578,6 +587,8 @@ if (isset($_POST['lktifullpaper'])) {
                                             echo "150.000,00";
                                         } else if ($lomba == 'lkti') {
                                             echo "100.000,00";
+                                        } else if($lomba == 'lf') {
+                                            echo "180.000,00";
                                         }
                                         ?>
                                     per tim</b></p>

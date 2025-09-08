@@ -147,7 +147,7 @@ ini_set('display_errors', '1');
                     } elseif ($sesi == 'plc') {
                         include_once 'home/plc/plc.php';
                     } elseif ($sesi == 'lf') {
-                        include_once 'home/plc/plc.php';
+                        include_once 'home/lf/lf.php';
                     } ?>
                 </div>
             </div>
@@ -166,6 +166,8 @@ ini_set('display_errors', '1');
             include_once 'home/ffr/timeline.php';
         } elseif ($sesi == 'plc') {
             include_once 'home/plc/timeline.php';
+        } elseif ($sesi == 'lf') {
+            include_once 'home/lf/timeline.php';
         } else { ?>
         <?php } ?>
     <?php //} ?>
