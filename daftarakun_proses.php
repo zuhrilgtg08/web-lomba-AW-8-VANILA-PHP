@@ -3,12 +3,12 @@
     $kon = new Koneksi();
     $create = @$_REQUEST['create'];
     $nama = @$_POST['tnama'];
+    $lomba = @$_POST['tlomba'];
     $nama_anggota_1 = @$_POST['tnama_anggota_1'];
-    $nama_anggota_2 = @$_POST['tnama_anggota_2'];
+    $nama_anggota_2 = ($lomba === 'lf' || $lomba === 'plc') ? '' : @$_POST['tnama_anggota_2'];
     $namatim = @$_POST['tnamatim'];
     $sekolah = @$_POST['tsekolah'];
     $email = @$_POST['temail'];
-    $lomba = @$_POST['tlomba'];
     $no = @$_POST['tnomor'];
     $pass = @$_POST['tpass'];
     $pass1 = @$_POST['tpass1'];

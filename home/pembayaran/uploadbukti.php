@@ -186,7 +186,7 @@ if (isset($_POST['submitlkti'])) {
 if (isset($_POST['acc'])) {
     $updateProses = $kon->kueri("UPDATE login_peserta SET proses = 4 WHERE id_peserta = '$varpeserta'");
     if ($updateProses == TRUE) {
-        header("Location: index.php");
+        echo '<script>window.location.href = "index.php";</script>';
         exit();
     }
 }

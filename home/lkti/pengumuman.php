@@ -40,7 +40,7 @@ if ($jumlahlolos >= 1) {
 
                         <div class="col-lg-12">
 
-                            <!--  <span>
+                             <span>
                          <h5 class="my-3">*Bagi Tim Yang Dinyatakan Lolos Harap Segera Bergabung Pada Grup WhatsApp Dengan Klik Link Dibawah Ini!</h5>
                          <span>
                           <div>
@@ -49,7 +49,7 @@ if ($jumlahlolos >= 1) {
                                <img src="image/wa.png" style="width: 150px;" alt="">
                            </a>
                        </div>
-                   </span> -->
+                   </span>
 
                         </div>
                     </div>

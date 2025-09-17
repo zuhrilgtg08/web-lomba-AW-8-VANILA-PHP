@@ -68,11 +68,12 @@
                             <i class="fa fa-id-card-o" aria-hidden="true"></i></span>
                     </div>
 
-                    <div class="wrap-input100 validate-input">
-                        <input class="input100" id="inputFname" name="tnama_anggota_2" type="text" placeholder="Nama Anggota 2" required>
+                    <div class="wrap-input100 validate-input anggota2">
+                        <input class="input100" id="fname-anggota-2" name="tnama_anggota_2" type="text" placeholder="Nama Anggota 2" required>
                         <span class="focus-input100"></span>
                         <span class="symbol-input100">
-                            <i class="fa fa-id-card-o" aria-hidden="true"></i></span>
+                            <i class="fa fa-id-card-o" aria-hidden="true"></i>
+                        </span>
                     </div>
                     <div class="wrap-input100 validate-input">
                         <input class="input100" id="inputEmail" name="temail" type="email" placeholder="Email" required>
@@ -88,7 +89,7 @@
                             <i class="fa fa-phone" aria-hidden="true"></i></span>
                     </div>
 
-                    <div class="wrap-input100 validate-input"  data-validate="Password is required">
+                    <div class="wrap-input100 validate-input" data-validate="Password is required">
                         <input class="input100" id="inputPassword" name="tpass" type="password" placeholder="Password" required>
                         <span class="focus-input100"></span>
                         <span class="symbol-input100">
@@ -109,8 +110,9 @@
                             <option value="lf">LF</option>
                         </select>
                         <!-- <p class="text-danger my-3">Pendaftaran PLC telah ditutup. Terima Kasih Atas Partisipasi Anda</p> -->
+                        <!-- <p class="text-danger my-3">Pendaftaran LKTI telah ditutup. Terima Kasih Atas Partisipasi Anda</p> -->
                     </div>
-                    
+
                     <div class="container-login100-form-btn">
                         <button class="login100-form-btn">DAFTAR</button>
                     </div>
@@ -150,9 +152,20 @@
             scale: 1.1
         })
     </script>
-    <!--===============================================================================================-->
-    <script src="js/main.js"></script>
 
+    <script>
+        document.querySelector('select[name="tlomba"]').addEventListener('change', function() {
+            const anggota2Input = document.querySelector('#fname-anggota-2');
+            if (this.value === 'lf' || this.value === 'plc') {
+                anggota2Input.style.display = 'none';
+                document.querySelector('input[name="tnama_anggota_2"]').required = false;
+            } else {
+                anggota2Input.style.display = 'block';
+                document.querySelector('input[name="tnama_anggota_2"]').required = true;
+            }
+        });
+    </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
