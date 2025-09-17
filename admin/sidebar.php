@@ -133,12 +133,12 @@
                 <span>Daftar Peserta LF</span></a>
         </li>
 
-        <li class="nav-item">
-            <!-- <a class="nav-link" href="pointlf.php"> -->
+        <!-- <li class="nav-item">
+            <a class="nav-link" href="pointlf.php">
             <a class="nav-link" href="#">
                 <i class="fas fa-chart-bar"></i>
                 <span>Tambahkan Point</span></a>
-        </li>
+        </li> -->
     <?php } ?>
 
 
