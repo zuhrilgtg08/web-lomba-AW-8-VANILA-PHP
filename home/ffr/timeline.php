@@ -14,7 +14,7 @@
                     </div>
                 </div>
             </li>
-            <li class="timeline-inverted">
+            <!-- <li class="timeline-inverted">
                 <div class="timeline-image"><img class="rounded-circle img-fluid" src="image/ffr/pelatihan1.png" alt="..." /></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -31,7 +31,7 @@
                         <h6 style="color: #6C757D;"><?= $ffr['tgl_pelatihan2']; ?></h6>
                     </div>
                 </div>
-            </li>
+            </li> -->
             <li class="timeline-inverted">
                 <div class="timeline-image"><img class="rounded-circle img-fluid" src="image/ffr/tahap.png" alt="..." /></div>
                 <div class="timeline-panel">
@@ -46,7 +46,7 @@
                 <div class="timeline-panel">
                     <div class="timeline-heading">
                         <h4 class="subheading">Penyisihan</h4>
-                        <h6 style="color: #6C757D;"><?= $ffr['tgl_seleksi1']; ?></h6>
+                        <h6 style="color: #6C757D;"><?= $ffr['tgl_pengumuman2']; ?></h6>
                     </div>
                 </div>
             </li>

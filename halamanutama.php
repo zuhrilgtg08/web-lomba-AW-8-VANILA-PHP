@@ -514,17 +514,16 @@ $event_description = "Automation Week merupakan event tahunan terbesar dari Himp
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4 class="subheading">Pendaftaran dan Pembayaran LKTI</h4>
-                                <h6 style="color: #6C757D;"><?= isset($plc['tgl_daftar']) ? $lkti['tgl_daftar'] : '20 Oktober - 15 November 2024'; ?></h6>
+                                <h6 style="color: #6C757D;"><?= isset($plc['tgl_daftar']) ? $lkti['tgl_daftar'] : '22 September - 2 Oktober 2025'; ?></h6>
                             </div>
                         </div>
-
                     </li>
                     <li class="timeline-inverted">
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="image/ffr.png" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4 class="subheading">Pendaftaran dan Pembayaran FFR</h4>
-                                <h6 style="color: #6C757D;"><?= isset($ffr['tgl_pendaftaran']) ? $ffr['tgl_pendaftaran'] : '25 Oktober - 11 November 2024'; ?></h6>
+                                <h6 style="color: #6C757D;"><?= isset($ffr['tgl_pendaftaran']) ? $ffr['tgl_pendaftaran'] : '22 September - 19 Oktober 2025'; ?></h6>
                             </div>
                         </div>
                     </li>
@@ -534,7 +533,7 @@ $event_description = "Automation Week merupakan event tahunan terbesar dari Himp
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4 class="subheading">Pendaftaran dan Pembayaran PLC</h4>
-                                <h6 style="color: #6C757D;"><?= isset($plc['tgl_daftar']) ? $plc['tgl_daftar'] : '20 Oktober - 15 November 2024'; ?></h6>
+                                <h6 style="color: #6C757D;"><?= isset($plc['tgl_daftar']) ? $plc['tgl_daftar'] : '22 September - 14 Oktober 2025'; ?></h6>
                             </div>
                         </div>
                     </li>
@@ -543,7 +542,7 @@ $event_description = "Automation Week merupakan event tahunan terbesar dari Himp
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4 class="subheading">Pendaftaran dan Pembayaran Line Follower</h4>
-                                <h6 style="color: #6C757D;"><?= isset($ffr['tgl_pendaftaran']) ? $ffr['tgl_pendaftaran'] : '25 Oktober - 11 November 2024'; ?></h6>
+                                <h6 style="color: #6C757D;"><?= isset($ffr['tgl_pendaftaran']) ? $ffr['tgl_pendaftaran'] : '22 September - 19 Oktober 2025'; ?></h6>
                             </div>
                         </div>
                     
