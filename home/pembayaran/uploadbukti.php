@@ -66,9 +66,8 @@ if (isset($_POST['bayar'])) {
             // header("Location: index.php");
             echo '<meta http-equiv="refresh" content="0;url=index.php">';
             exit();
-            }
-        } 
-        else {
+        }
+    } else {
         // Berkas tidak valid
         echo '<script>alert("Hanya file PDF, JPG, dan PNG yang diizinkan.");</script>';
     }
@@ -258,7 +257,7 @@ if (isset($_POST['finalsubmit'])) {
     $updatebukti = $kon->kueri("UPDATE tb_bukti SET buktikartu = '$lokasi_simpan_kartu_pelajar', buktifollow = '$lokasi_simpan_follow_instagram', buktitwiboon = '$lokasi_simpan_upload_twibbon' WHERE id_peserta = '$varpeserta'");
     if ($updatebukti == TRUE) {
         $updateProses = $kon->kueri("UPDATE login_peserta SET proses = 3 WHERE id_peserta = '$varpeserta'");
-     
+
         // header("Location: index.php");
         echo '<meta http-equiv="refresh" content="0;url=index.php">';
         exit();
@@ -331,11 +330,11 @@ if (isset($_POST['lktifullpaper'])) {
     $uploaddb =  $kon->kueri("UPDATE tb_bukti SET bukti = '$lokasi_simpan', filepaper = '$lokasi_simpan_fullpaper' WHERE id_peserta = '$varpeserta' ");
     $demo = $kon->kueri("UPDATE login_peserta SET demo = '$demo' WHERE id_peserta = '$varpeserta' ");
     if ($uploaddb == TRUE) {
-          
-        $updateProses = $kon->kueri("UPDATE login_peserta SET proses = 3 WHERE id_peserta = '$varpeserta'"); 
+
+        $updateProses = $kon->kueri("UPDATE login_peserta SET proses = 3 WHERE id_peserta = '$varpeserta'");
         // die;
-        
-       echo '<meta http-equiv="refresh" content="0;url=index.php">';
+
+        echo '<meta http-equiv="refresh" content="0;url=index.php">';
     }
 }
 
@@ -358,11 +357,11 @@ if (isset($_POST['lktifullpaper'])) {
                             </div>
                             <h4>Anggota Tim:</h4>
                             <div class="form-group mb-3">
-                                <input type="text" class="form-control" name="anggota1" placeholder="Nama Anggota 1">
+                                <input type="text" class="form-control" value="<?= $databayar['nama_anggota1'] ?>" name="anggota1" placeholder="Nama Anggota 1" disabled>
                             </div>
 
                             <div class="form-group mb-3">
-                                <input type="text" class="form-control" name="anggota2" placeholder="Nama Anggota 2">
+                                <input type="text" class="form-control" value="<?= $databayar['nama_anggota2'] ?>" name="anggota2" placeholder="Nama Anggota 2" disabled>
                             </div>
                         </div>
                     </div>
@@ -407,11 +406,16 @@ if (isset($_POST['lktifullpaper'])) {
                                     <select class="form-select" name="bidang" required>
                                         <option value="" disabled selected>Pilih Bidang Lomba</option>
                                         <option value="Maritim">Maritim</option>
-                                        <option value="Ekonomi Kreatif">Ekonomi Kreatif</option>
-                                        <option value="Transportasi dan Logistik">Transportasi dan Logistik</option>
+                                        <option value="Blue Economy">Blue Economy</option>
+                                        <option value="Blue Energy">Blue Energy</option>
+                                        <option value="Green Energy">Green Energy</option>
+                                        <option value="Kesehatan">Kesehatan</option>
+                                        <option value="Lingkungan">Lingkungan</option>
+                                        <option value="Smart City">Smart City</option>
                                         <option value="Pendidikan">Pendidikan</option>
-                                        <option value="Teknologi">Teknologi</option>
-                                        <option value="Sosial Budaya">Sosial Budaya</option>
+                                        <option value="Industri">Industri</option>
+                                        <option value="Mitigasi Bencana">Mitigasi Bencana</option>
+                                        <option value="Oil And Gas Exploration">Oil And Gas Exploration</option>
                                     </select>
                                 </div>
                             </div>
@@ -471,23 +475,22 @@ if (isset($_POST['lktifullpaper'])) {
                         <div class="col">
                             <p>Biaya pendaftaran:</p>
                             <p><b>Rp <?php if ($lomba == 'ffr') {
-                                            echo "250.000,00";
-                                        } else if ($lomba == 'plc') {
-                                            echo "150.000,00";
-                                        } else if ($lomba == 'lkti') {
-                                            echo "100.000,00";
-                                        } else if($lomba == 'lf') {
                                             echo "180.000,00";
+                                        } else if ($lomba == 'plc') {
+                                            echo "180.000,00";
+                                        } else if ($lomba == 'lkti') {
+                                            echo "150.000,00";
+                                        } else if ($lomba == 'lf') {
+                                            echo "150.000,00";
                                         }
                                         ?>
                                     per tim</b></p>
-                            <p>Silakan melakukan pembayaran ke salah satu dari platform berikut:</p>
+                            <p>Silakan melakukan pembayaran ke salah satu dari platform berikut!</p>
                             <h4>Metode Pembayaran:</h4>
                             <ul>
-                                <li>Shopeepay: 081333316039 atas nama dhoifullohrozaan</li>
-                                <li>Dana: 087890297795 atas nama Rifa Tahara</li>
-                                <li>OVO: 087890297795 atas nama Rifa Tahara</li>
-                                <li>BNI: 1790061362 atas nama Rifa Tahara</li>
+                                <li>No Rekening BRI: 384201030273535 - Sena Kukuh Wiro Jatmiko</li>
+                                <li>Seabank: 901354686160 - Sena Kukuh Wiro Jatmiko</li>
+                                <li>Dana: 081275491602 - Sena Kukuh Wiro Jatmiko</li>
                             </ul>
                         </div>
                     </div>
@@ -563,13 +566,11 @@ if (isset($_POST['lktifullpaper'])) {
                             </p>
                         </div>
                     </div>
-            </div>
-            </form>
+                </form>
             </div>
         </section>
     <?php } ?>
 <?php } else { ?>
-
     <?php if ($proses == 0) {
     ?>
         <section class="page-section">
@@ -582,23 +583,22 @@ if (isset($_POST['lktifullpaper'])) {
                         <div class="col">
                             <p>Biaya pendaftaran:</p>
                             <p><b>Rp <?php if ($lomba == 'ffr') {
-                                            echo "250.000,00";
-                                        } else if ($lomba == 'plc') {
-                                            echo "150.000,00";
-                                        } else if ($lomba == 'lkti') {
-                                            echo "100.000,00";
-                                        } else if($lomba == 'lf') {
                                             echo "180.000,00";
+                                        } else if ($lomba == 'plc') {
+                                            echo "180.000,00";
+                                        } else if ($lomba == 'lkti') {
+                                            echo "150.000,00";
+                                        } else if ($lomba == 'lf') {
+                                            echo "150.000,00";
                                         }
                                         ?>
                                     per tim</b></p>
-                            <p>Silakan melakukan pembayaran ke salah satu dari platform berikut:</p>
+                            <p>Silakan melakukan pembayaran ke salah satu dari platform berikut!</p>
                             <h4>Metode Pembayaran:</h4>
                             <ul>
-                                <li>Shopeepay: 081333316039 atas nama dhoifullohrozaan</li>
-                                <li>Dana: 087890297795 atas nama Rifa Tahara</li>
-                                <li>OVO: 087890297795 atas nama Rifa Tahara</li>
-                                <li>BNI: 1790061362 atas nama Rifa Tahara</li>
+                                <li>No Rekening BRI: 384201030273535 - Sena Kukuh Wiro Jatmiko</li>
+                                <li>Seabank: 901354686160 - Sena Kukuh Wiro Jatmiko</li>
+                                <li>Dana: 081275491602 - Sena Kukuh Wiro Jatmiko</li>
                             </ul>
                         </div>
                     </div>
@@ -638,8 +638,7 @@ if (isset($_POST['lktifullpaper'])) {
                             </p>
                         </div>
                     </div>
-            </div>
-            </form>
+                </form>
             </div>
         </section>
     <?php } else if ($proses == 2) { ?>
@@ -657,11 +656,11 @@ if (isset($_POST['lktifullpaper'])) {
                             </div>
                             <h4>Anggota Tim:</h4>
                             <div class="form-group mb-3">
-                                <input type="text" class="form-control" name="anggota1" placeholder="Nama Anggota 1">
+                                <input type="text" class="form-control" value="<?= $databayar['nama_anggota1'] ?>" name="anggota1" placeholder="Nama Anggota 1" disabled>
                             </div>
                             <?php if ($lomba == 'lkti' || $lomba == 'ffr') { ?>
                                 <div class="form-group mb-3">
-                                    <input type="text" class="form-control" name="anggota2" placeholder="Nama Anggota 2">
+                                    <input type="text" class="form-control" value="<?= $databayar['nama_anggota2'] ?>" name="anggota2" placeholder="Nama Anggota 2" disabled>
                                 </div>
                             <?php } ?>
 
@@ -728,7 +727,14 @@ if (isset($_POST['lktifullpaper'])) {
         </section>
     <?php } else if ($proses == 3) { ?>
         <div class="alert alert-success" role="alert">
-            Selamat! Pembayaran Anda telah diverifikasi dan diterima. Silakan masuk ke grup berikut untuk informasi lebih lanjut.
+            <?php
+            if ($lomba == 'lf' || $lomba == 'lkti') {
+                echo "Selamat!!! Pembayaran Anda telah diverifikasi dan diterima. Silakan masuk ke grup berikut untuk informasi lebih lanjut.";
+            } else {
+                echo "Selamat! Pembayaran Anda telah diverifikasi dan diterima. Silakan masuk ke grup berikut untuk informasi lebih lanjut.";
+            }
+            ?>
+
             <?php
             if ($lomba == 'plc') {
                 $linkGrup = 'https://chat.whatsapp.com/G9WD0qXXF6cHsZRPYkwlgQ';
@@ -738,19 +744,24 @@ if (isset($_POST['lktifullpaper'])) {
                 $linkGrup = 'https://chat.whatsapp.com/HgzpB1XqaWoFQZFdVvBgEL';
             }
             ?>
-            <a href="<?php echo $linkGrup; ?>" target="_blank" style="color: blue; text-decoration: none;">Link Grup</a>
-            <form method="POST">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="sudah_masuk" id="sudah_masuk" name="sudah_masuk" required>
-                    <label class="form-check-label" for="sudah_masuk">
-                        <span class="checkmark"></span> <!-- Ini digunakan untuk desain centang -->
-                        Saya sudah masuk ke grup.
-                    </label>
-                </div>
 
-                <input type="submit" class="btn btn-danger" name="acc" value="Simpan">
-            </form>
+            <?php
+            if ($lomba == 'plc' || $lomba == 'ffr') {
+            ?>
+                <a href="<?php echo $linkGrup; ?>" target="_blank" style="color: blue; text-decoration: none;">Link Grup</a>
+                <form method="POST">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="sudah_masuk" id="sudah_masuk" name="sudah_masuk" required>
+                        <label class="form-check-label" for="sudah_masuk">
+                            <span class="checkmark"></span>
+                            Saya sudah masuk ke grup.
+                        </label>
+                    </div>
+                    <input type="submit" class="btn btn-danger" name="acc" value="Simpan">
+                </form>
+            <?php
+            }
+            ?>
         </div>
-
-<?php }
-} ?>
+    <?php } ?>
+<?php } ?>

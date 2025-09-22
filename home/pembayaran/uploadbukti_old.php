@@ -564,8 +564,7 @@ if (isset($_POST['lktifullpaper'])) {
             </div>
         </section>
     <?php } ?>
-<?php } else { ?>
-
+<?php } else  ?>
     <?php if ($proses == 0) {
     ?>
         <section class="page-section">
@@ -584,10 +583,9 @@ if (isset($_POST['lktifullpaper'])) {
                                         } else if ($lomba == 'lkti') {
                                             echo "125.000,00";
                                         } else if($lomba == 'lf') {
-                                            echo "100.000,00";
-                                        }
-                                        }
-                                        ?>
+                                                            echo "100.000,00";
+                                                        }
+                                                        ?>
                                     per tim</b></p>
                             <p>Silakan melakukan pembayaran ke salah satu dari platform berikut:</p>
                             <h4>Metode Pembayaran:</h4>
@@ -653,7 +651,7 @@ if (isset($_POST['lktifullpaper'])) {
                             </div>
                             <h4>Anggota Tim:</h4>
                             <div class="form-group mb-3">
-                                <input type="text" class="form-control" name="anggota1" placeholder="Nama Anggota 1">
+                                <input type="text" class="form-control" name="anggota1" value="<?= $databayar['nama_anggota_1'] ?>" placeholder="Nama Anggota 1" disabled>
                             </div>
                             <?php if ($lomba == 'lkti' || $lomba == 'ffr') { ?>
                                 <div class="form-group mb-3">
@@ -722,7 +720,7 @@ if (isset($_POST['lktifullpaper'])) {
             </form>
             </div>
         </section>
-    <?php } else if ($proses == 3) { ?>
+    <?php } elseif ($proses == 3) { ?>
         <div class="alert alert-success" role="alert">
             Selamat! Pembayaran Anda telah diverifikasi dan diterima. Silakan masuk ke grup berikut untuk informasi lebih lanjut.
             <?php
@@ -747,6 +745,4 @@ if (isset($_POST['lktifullpaper'])) {
                 <input type="submit" class="btn btn-danger" name="acc" value="Simpan">
             </form>
         </div>
-
-<?php }
-} ?>
+<?php } ?>

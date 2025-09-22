@@ -14,6 +14,8 @@ $xyz = $kon->kueri("SELECT * FROM tl_lkti");
 $lkti = $kon->hasil_data($xyz);
 $qwe = $kon->kueri("SELECT * FROM tl_plc");
 $plc = $kon->hasil_data($qwe);
+$hij = $kon->kueri("SELECT * FROM tl_lf");
+$lf = $kon->hasil_data($hij);
 $asd = $kon->kueri("SELECT * FROM aksiupload WHERE id = '1' ");
 $aksi = $kon->hasil_data($asd);
 $nilaiplc = $kon->kueri("SELECT * FROM aksiupload WHERE id = '1' ");
