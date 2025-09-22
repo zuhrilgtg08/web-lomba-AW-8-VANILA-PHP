@@ -88,11 +88,10 @@ if (!isset($_SESSION["email_admin"])) {
                                 </div>
                             </div>
                             <div class="form row">
-                                <div class="form-group col-md-4">
+                                <!-- <div class="form-group col-md-4">
                                     <label for="tm">Babak 8 Besar</label>
                                     <input type="text" class="form-control" id="" name="tm" value="<?php echo $data['tgl_tm']; ?>" required>
-    
-                                </div>
+                                </div> -->
                                 <div class="form-group col-md-4">
                                     <label for="final">Final</label>
                                     <input type="text" class="form-control" id="final" name="final" value="<?php echo $data['tgl_final']; ?>" required>

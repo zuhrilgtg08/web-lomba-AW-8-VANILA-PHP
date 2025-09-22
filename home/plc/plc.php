@@ -51,11 +51,8 @@ if ($status == 'on') {
 
                     </table>
                 </div>
-
             </div>
         </section>
-
-
 
 <?php }
 } ?>
@@ -71,7 +68,8 @@ $data = $kon->hasil_data($result);
 $file = $kon->hasil_data($upload);
 $isi = $kon->jumlah_data($upload);
 ?>
-<?php if ($aksi['status'] == 'on') { ?>
+<!-- command untuk buka file upload plc jadi uncomment jika ingin dibukak -->
+<!-- <?php if ($aksi['status'] == 'on') { ?>
     <?php if ($isi == 0) { ?>
         <form name="form_masuk" method="POST" action="uploadplc_proses.php" enctype="multipart/form-data">
 
@@ -81,14 +79,13 @@ $isi = $kon->jumlah_data($upload);
             <div class="container">
 
 
-                <!--<div class="lg-md-10">
+                <div class="lg-md-10">
                     <h5> <a href="#" class="btn btn-info" target="_blank">File Soal PLC</a>
                     </h5>  
 
-                </div> -->
+                </div>
             </div>
-            <section class="page-section" id="upload" style="background-color: #E9ECF;">
-
+            <section class="page-section" id="upload" style="background-color: #E9ECEF;">
                 <div class="container">
 
 
@@ -144,15 +141,15 @@ $isi = $kon->jumlah_data($upload);
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
         </form>
-        </section>
     <?php } ?>
 
 <?php } elseif ($isi == 1) { ?>
 
 <?php } elseif ($aksi['status'] == 'off') { ?>
-
-    <section class="page-section" id="upload" style="background-color: #E9ECF;">
+    <section class="page-section" id="upload" style="background-color: #E9ECEF;">
         <div class="container">
             <div class="text-center">
                 <h4 class="section-heading">Upload File Belum Dibuka atau Sudah Ditutup!</h4>
@@ -162,7 +159,7 @@ $isi = $kon->jumlah_data($upload);
 <?php } ?>
 <?php if ($isi == 1) : ?>
     <?php die; ?>
-    <section class="page-section" id="upload" style="background-color: #E9ECF;">
+    <section class="page-section" id="upload" style="background-color: #E9ECEF;">
         <div class="container">
             <div class="text-center">
                 <h3 class="section-heading">Status Submit</h3>
@@ -213,9 +210,6 @@ $isi = $kon->jumlah_data($upload);
                 </div>
             </div>
         </div>
-
-        </div>
     </section>
-<?php endif ?>
- dad
+<?php endif ?>  -->
  
