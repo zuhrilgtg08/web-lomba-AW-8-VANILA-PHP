@@ -52,11 +52,6 @@ if (isset($_POST['lkti'])) {
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-
-
-
-
-
                     <!-- Begin Page Content -->
                     <div class="container-fluid">
                         <div class="card shadow mb-4">

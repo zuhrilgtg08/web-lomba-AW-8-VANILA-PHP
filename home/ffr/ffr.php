@@ -13,7 +13,7 @@
 
 </div>
 
- <section class="page-section" id="video" style="background-color: #E9ECF;">
+ <section class="page-section" id="video" style="background-color: #E9EECF;">
     <div class="container">
         <div class="text-center">
             <h3 class="section-heading">Video Trial Kapal FFR</h3>

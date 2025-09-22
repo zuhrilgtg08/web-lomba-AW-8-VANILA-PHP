@@ -1,8 +1,8 @@
 <?php
 session_start();
 if (!isset($_SESSION["email_admin"])) {
- header("Location: index.php");
- exit;
+  header("Location: index.php");
+  exit;
 }
 
 ?>
@@ -37,7 +37,7 @@ if (!isset($_SESSION["email_admin"])) {
 
 
 
-          <?php 
+          <?php
           include "koneksi.php";
           $kon = new Koneksi();
           $abc = $kon->kueri("SELECT * FROM tl_plc WHERE id = '1' ");
@@ -45,21 +45,21 @@ if (!isset($_SESSION["email_admin"])) {
           ?>
 
           <form name="form_edit" method="POST" action="tlplc_proses.php" enctype="multipart/form-data">
-            <input type="hidden" name="aksi" id="aksi" value="edit"/>
-            <input type="hidden" name="hid" id="hid" value="<?php echo $data['id']; ?>"/>
+            <input type="hidden" name="aksi" id="aksi" value="edit" />
+            <input type="hidden" name="hid" id="hid" value="<?php echo $data['id']; ?>" />
             <div class="row justify-content-center">
 
               <div class="col-xl-12   ">
 
                 <div class="card o-hidden border-0 shadow-lg my-10">
-                  <div class="card-body p-0 bg-transparentt"  >
+                  <div class="card-body p-0 bg-transparentt">
                     <!-- Nested Row within Card Body -->
                     <div class="row">
 
                       <div class="col-lg">
                         <div class="p-5">
                           <div class="text-center">
-                            <h1 class="h4 text-gray-900 mb-4 " >Time Line PLC</h1>
+                            <h1 class="h4 text-gray-900 mb-4">Time Line PLC</h1>
                           </div>
 
                           <div class="form-row">
@@ -72,42 +72,42 @@ if (!isset($_SESSION["email_admin"])) {
                               <input type="text" class="form-control" name="pelatihan" value="<?= $data['tgl_pelatihan']; ?>" required>
                             </div>
                             <div class="form-group col-md-4">
-                              <label for="inputZip">Babak Penyisihan</label>
-                              <input type="text" class="form-control" name="penyisihan" value="<?= $data['tgl_penyisihan']; ?>" required>
+                              <label for="inputCity">Technical Meeting</label>
+                              <input type="text" class="form-control" name="tm" value="<?= $data['tgl_tm']; ?>">
                             </div>
                           </div>
 
                           <div class="form-row">
                             <div class="form-group col-md-4">
-                              <label for="inputCity">Pengumuman Lolos Babak Penyisihan</label>
-                              <input type="text" class="form-control" name="lolos" value="<?= $data['tgl_lolos']; ?>" required>
-                            </div>
-
-                            <div class="form-group col-md-4">
-                              <label for="inputCity">Technical Meeting</label>
-                              <input type="text" class="form-control" name="tm" value="<?= $data['tgl_tm']; ?>">
+                              <label for="inputCity">Babak Penyisihan</label>
+                              <input type="text" class="form-control" name="penyisihan" value="<?= $data['tgl_penyisihan']; ?>">
                             </div>
                             <div class="form-group col-md-4">
                               <label for="inputZip">Babak Final</label>
-                              <input type="text" class="form-control"name="final" value="<?= $data['tgl_final']; ?>" required>
+                              <input type="text" class="form-control" name="final" value="<?= $data['tgl_final']; ?>" required>
                             </div>
                           </div>
 
-
-
-
-
                           <div align="center">
-                            <button type="submit" class="btn btn-dark btn-user btn-block col-lg-3 mb-3" >Simpan</button>
+                            <button type="submit" class="btn btn-dark btn-user btn-block col-lg-3 mb-3">Simpan</button>
                             <button type="button" class="btn btn-danger btn-user btn-block col-lg-3 mb-3" onclick="javascript: window.location.href='index.php'; ">Kembali</button>
                           </div>
-                        </form>
-
-
+                        </div>
                       </div>
-                      <!-- End of Main Content -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </form>
+        </div>
+        <!-- End of Main Content -->
 
-                      <!-- Footer -->
-                      <?php
-                      include "footer.php"
-                    ?>
+        <!-- Footer -->
+        <?php
+        include "footer.php"
+        ?>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
