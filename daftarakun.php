@@ -11,11 +11,11 @@
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"> -->
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!-- <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css"> -->
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css"> -->
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
     <!--===============================================================================================-->
@@ -68,13 +68,8 @@
                             <i class="fa fa-id-card-o" aria-hidden="true"></i></span>
                     </div>
 
-                    <div class="wrap-input100 validate-input anggota2">
-                        <input class="input100" id="fname-anggota-2" name="tnama_anggota_2" type="text" placeholder="Nama Anggota 2" required>
-                        <span class="focus-input100"></span>
-                        <span class="symbol-input100">
-                            <i class="fa fa-id-card-o" aria-hidden="true"></i>
-                        </span>
-                    </div>
+                    <!-- Anggota 2 Input -->
+                    <div id="anggota2-placeholder"></div>
                     <div class="wrap-input100 validate-input">
                         <input class="input100" id="inputEmail" name="temail" type="email" placeholder="Email" required>
                         <span class="focus-input100"></span>
@@ -154,16 +149,36 @@
     </script>
 
     <script>
-        document.querySelector('select[name="tlomba"]').addEventListener('change', function() {
-            const anggota2Input = document.querySelector('#fname-anggota-2');
-            if (this.value === 'lf' || this.value === 'plc') {
-                anggota2Input.style.display = 'none';
-                document.querySelector('input[name="tnama_anggota_2"]').required = false;
+        const tLomba = document.querySelector('select[name="tlomba"]');
+        const anggota2Placeholder = document.getElementById('anggota2-placeholder');
+
+        function createAnggota2Input() {
+            const div = document.createElement('div');
+            div.className = 'wrap-input100 validate-input anggota2';
+            div.id = 'anggota2-div';
+            div.innerHTML = `
+            <input class="input100" id="fname-anggota-2" name="tnama_anggota_2" type="text" placeholder="Nama Anggota 2" required>
+            <span class="focus-input100"></span>
+            <span class="symbol-input100">
+                <i class="fa fa-id-card-o" aria-hidden="true"></i>
+            </span>
+        `;
+            return div;
+        }
+
+        function toggleAnggota2() {
+            if (tLomba.value === 'lf' || tLomba.value === 'plc') {
+                const anggota2Div = document.getElementById('anggota2-div');
+                if (anggota2Div) anggota2Div.remove();
             } else {
-                anggota2Input.style.display = 'block';
-                document.querySelector('input[name="tnama_anggota_2"]').required = true;
+                if (!document.getElementById('anggota2-div')) {
+                    anggota2Placeholder.appendChild(createAnggota2Input());
+                }
             }
-        });
+        }
+
+        tLomba.addEventListener('change', toggleAnggota2);
+        window.addEventListener('DOMContentLoaded', toggleAnggota2);
     </script>
     <script src="js/main.js"></script>
 </body>
