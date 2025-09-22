@@ -20,7 +20,6 @@
         return false;
     }
 
-
     if ($pass !== $pass1) {
         echo "<script>alert('Password yang dimasukan tidak sesuai')</script>";
         echo "<meta http-equiv='refresh' content='0;url=daftarakun.php' />";
