@@ -10,7 +10,7 @@
             Silahkan bergabung di grup Line Follower untuk mendapatkan informasi lebih lanjut. Dengan klik tombol di bawah ini. Terimakasih.
         </p>
         <div>
-            <a class="btn btn-danger" href="https://chat.whatsapp.com/GLKPra7V2ou5YSpOvAK4mG" target="_blank" role="button">Join Grup</a>
+            <a class="btn btn-danger" href="https://chat.whatsapp.com/IzytSYJRMJc09Aj9CK3oPQ?mode=ems_copy_t" target="_blank" role="button">Join Grup</a>
         </div>
     <?php endif; ?>
 </div>

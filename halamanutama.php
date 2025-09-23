@@ -88,7 +88,7 @@ $competitions = [
         'full_name' => 'Lomba Karya Tulis Ilmiah',
         'description' => 'Lomba Karya Tulis Ilmiah merupakan sebuah perlombaan yang bertujuan untuk mengembangkan ide kreatif dan inovatif siswa dalam memecahkan masalah yang ada di lingkungan sekitar.',
         'logo' => 'image/LKTI_AW8.png',
-        'guide_book' => 'assets/guide/GUIDEBOOK_LKTI.pdf',
+        'guide_book' => 'https://drive.google.com/drive/folders/1LlB1h7dXbIcFxFiWV2BUf2RJfVFYDEZb?usp=drive_link',
         'btn_class' => 'btn-lkti',
         'btn_text' => 'Download Guide Book LKTI'
     ],
@@ -98,7 +98,7 @@ $competitions = [
         'full_name' => 'Fire Fighting Roboboat',
         'description' => 'Fire Fighting Roboboat merupakan perlombaan kapal tanpa awak yang bergerak secara otomatis dan memiliki misi untuk memadamkan api.',
         'logo' => 'image/FFR_AW8.png',
-        'guide_book' => 'assets/guide/GUIDEBOOK_FFR.pdf',
+        'guide_book' => 'https://drive.google.com/drive/folders/1Xc2tKgDXoXcN0q_Y-34UnCOw-E6OmqM0?usp=drive_link',
         'btn_class' => 'btn-ffr',
         'btn_text' => 'Download Guide Book FFR'
     ],
@@ -108,7 +108,7 @@ $competitions = [
         'full_name' => 'Programmable Logic Controller',
         'description' => 'Programmable Logic Controller merupakan jenis lomba yang bertujuan untuk mengasah logika dan kemampuan siswa dalam bidang pemrograman PLC.',
         'logo' => 'image/PLC_AW8.png',
-        'guide_book' => 'assets/guide/GUIDEBOOK_PLC.pdf',
+        'guide_book' => 'https://drive.google.com/drive/folders/1QPSJh0ktutXskInEGvoYBCw69jRwd0KO?usp=drive_link',
         'btn_class' => 'btn-plc',
         'btn_text' => 'Download Guide Book PLC'
     ],
@@ -118,9 +118,9 @@ $competitions = [
         'full_name' => 'Line Follower',
         'description' => 'Line Follower merupakan jenis lomba yang bertujuan untuk mengasah logika dan kemampuan siswa dalam bidang pemrograman PLC.',
         'logo' => 'image/LF_AW8.png',
-        'guide_book' => 'assets/guide/GUIDEBOOK_PLC.pdf',
+        'guide_book' => 'https://drive.google.com/drive/folders/19rjeLr4o4ZYeSvLECxF9etIvNlbaSsfq?usp=drive_link',
         'btn_class' => 'btn-lf',
-        'btn_text' => 'Download Guide Book PLC'
+        'btn_text' => 'Download Guide Book LFM'
     ]
 ];
 
@@ -464,14 +464,14 @@ $event_description = "Automation Week merupakan event tahunan terbesar dari Himp
 
 
  </section>
-        
+<!--         
        <section class="page-section" id="videoregis">
     <div class="container">
         <div class="text-center">
             <h2 class="section-heading text-uppercase">Video Cara Registrasi</h2>
         </div>
 
-        <!-- Baris pertama -->
+  
         <div class="row text-center my-5">
             <div class="col-md-6">
                 <div class="text-center">
@@ -501,7 +501,7 @@ $event_description = "Automation Week merupakan event tahunan terbesar dari Himp
         </div>
 
 
-</section>
+</section> -->
         <!-- About-->
         <section class="page-section" id="timeline">
             <div class="container">
