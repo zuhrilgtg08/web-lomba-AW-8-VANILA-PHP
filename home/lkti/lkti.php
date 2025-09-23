@@ -15,7 +15,8 @@
         Silahkan bergabung di grup LKTI untuk mendapatkan informasi lebih lanjut. Dengan klik tombol di bawah ini. Terimakasih.
     </p> -->
     <span>
-        <a class="btn btn-danger" href="https://chat.whatsapp.com/GLKPra7V2ou5YSpOvAK4mG" target="_blank" role="button">Join Grup</a>
+        <!-- <a class="btn btn-danger" href="https://chat.whatsapp.com/GLKPra7V2ou5YSpOvAK4mG" target="_blank" role="button">Join Grup</a> -->
+        <a class="btn btn-danger" href="#" target="_blank" role="button">Join Grup</a>
         <!-- <a href="https://docs.google.com/forms/d/e/1FAIpQLSdz5XOFyZJl175mpx0yIaYfO35PxDeFfVsYLYj9bL_inb0a3A/viewform?usp=sf_link" class="btn btn-secondary" target="_blank">Upload File Karya</a> -->
         <!-- <a href="uploadlkti.php" class="btn btn-info">Upload File</a> 
             <a href="https://docs.google.com/forms/d/e/1FAIpQLScvG8i2UgInHz9jsn22Pkku7HBiJBsQtC0HKp1TOCVXZlTmEQ/viewform" class="btn btn-success" target="_blank">Upload Poster</a> -->

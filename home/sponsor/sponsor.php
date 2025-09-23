@@ -39,7 +39,7 @@
 
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <!-- <div class="col-lg-3">
                     <div class="team-member1">
                         <img class="mx-auto rounded-circle" src="image/awlogo.png" alt="..." />
                         <h6>Sponsor</h6>
@@ -51,7 +51,7 @@
                         <img class="mx-auto rounded-circle" src="image/awlogo.png" alt="..." />
                         <h6>Sponsor</h6>
                     </div>
-                </div>
+                </div> -->
 
             </div>
 

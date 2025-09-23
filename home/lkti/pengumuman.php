@@ -2,7 +2,7 @@
 $no = 0;
 if ($jumlahlolos >= 1) {
     if ($lolos == 'lkti') { ?>
-        <section class="page-section" id="pengumuman" style="background-color: #E9ECF;">
+        <section class="page-section" id="pengumuman" style="background-color: #E9EECF;">
             <div class="container">
                 <div class="text-center">
                     <h3 class="section-heading"><b>Pengumuman Final LKTI</b></h3>

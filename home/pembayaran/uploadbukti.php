@@ -390,7 +390,7 @@ if (isset($_POST['lktifullpaper'])) {
 
                     <div class="row">
                         <div class="col">
-                            <h4 class="my-3">Bukti Upload Twibbon (format: *.jpg, *.png) <span class="text-danger">*<a href="https://twb.nz/twibbonkaryatulis" style="color: blue;" target="_blank"> Link Twibbon</a></span></h4>
+                            <h4 class="my-3">Bukti Upload Twibbon (format: *.jpg, *.png) <span class="text-danger">*<a href="https://drive.google.com/drive/folders/1f4khGYlpVWzNhoAW4Ta-J62QBR6i-T9l?usp=drive_link" style="color: blue;" target="_blank"> Link Twibbon</a></span></h4>
                             <div class="input-group">
                                 <div class="custom-file">
                                     <input type="file" class="form-control" id="bukti_upload_twibbon" name="uploadtwibbon" required>
@@ -462,7 +462,7 @@ if (isset($_POST['lktifullpaper'])) {
         <div class="alert alert-success" role="alert">
             Terima kasih telah berpartisipasi dalam LKTI Automation Week! Kami telah menerima abstrak Anda.
             Mohon tunggu pengumuman lebih lanjut melalui grup WhatsApp. Kami akan memberitahu Anda melalui tautan berikut.
-            <a href="https://chat.whatsapp.com/GLKPra7V2ou5YSpOvAK4mG" style="color:blue;" target="_blank">Link Grup</a>
+            <a href="https://chat.whatsapp.com/JDgrbnxzGtgF6PlqmXPMQw?mode=ems_copy_t" style="color:blue;" target="_blank">Link Grup</a>
         </div>
     <?php } else if ($proses == 2) { ?>
         <section class="page-section">
@@ -560,8 +560,8 @@ if (isset($_POST['lktifullpaper'])) {
                             </p>
                             <p>
                                 Jika Anda memerlukan konfirmasi atau informasi lebih lanjut, silakan hubungi kami melalui WhatsApp melalui tautan berikut:
-                                <a href="https://api.whatsapp.com/send/?phone=%2B6287890297795&text&app_absent=0" style="color: blue; text-decoration: none;" target="_blank">
-                                    087890297795
+                                <a href="https://api.whatsapp.com/send/?phone=%2B6281275491602&text&app_absent=0" style="color: blue; text-decoration: none;" target="_blank">
+                                    081275491602
                                 </a>
                             </p>
                         </div>
@@ -632,8 +632,8 @@ if (isset($_POST['lktifullpaper'])) {
                             </p>
                             <p>
                                 Jika Anda memerlukan konfirmasi atau informasi lebih lanjut, silakan hubungi kami melalui WhatsApp melalui tautan berikut:
-                                <a href="https://api.whatsapp.com/send/?phone=%2B6287890297795&text&app_absent=0" style="color: blue; text-decoration: none;" target="_blank">
-                                    087890297795
+                                <a href="https://api.whatsapp.com/send/?phone=%2B6281275491602&text&app_absent=0" style="color: blue; text-decoration: none;" target="_blank">
+                                    081275491602
                                 </a>
                             </p>
                         </div>
@@ -693,11 +693,13 @@ if (isset($_POST['lktifullpaper'])) {
                         <div class="col">
                             <?php
                             if ($lomba == 'plc') {
-                                $linktwibbon = 'https://twb.nz/twibbonplc';
+                                $linktwibbon = 'https://drive.google.com/drive/folders/1Vq9bJ37rQMcnWGXzYTz3mIo9kVWZNXHu?usp=drive_link';
                             } elseif ($lomba == 'lkti') {
-                                $linktwibbon = 'https://twb.nz/twibbonkaryatulis';
+                                $linktwibbon = 'https://drive.google.com/drive/folders/1f4khGYlpVWzNhoAW4Ta-J62QBR6i-T9l?usp=drive_link';
+                            } elseif($lomba == 'lf'){
+                                $linktwibbon = 'https://drive.google.com/drive/folders/1cYOEuQd9Sj_L-BcXvO1ZCqxWxTzdVOPs?usp=drive_link';
                             } elseif ($lomba == 'ffr') {
-                                $linktwibbon = 'https://twb.nz/twibbonffr';
+                                $linktwibbon = 'https://drive.google.com/drive/folders/1OVb8Vnt-off078BEitKctIEmZKkgtpeJ?usp=drive_link';
                             }
                             ?>
                             <h4 class="my-3">Bukti Upload Twibbon (format: *.jpg, *.png) <span class="text-danger">*<a href="<?php echo $linktwibbon; ?>" style="color: blue;" target="_blank"> Link Twibbon</a></span></h4>
@@ -737,11 +739,11 @@ if (isset($_POST['lktifullpaper'])) {
 
             <?php
             if ($lomba == 'plc') {
-                $linkGrup = 'https://chat.whatsapp.com/G9WD0qXXF6cHsZRPYkwlgQ';
+                $linkGrup = 'https://chat.whatsapp.com/EjjGETx9aRxFvuCydCiLJa?mode=ems_copy_t';
             } elseif ($lomba == 'lkti') {
                 $linkGrup = 'https://chat.whatsapp.com/GLKPra7V2ou5YSpOvAK4mG';
             } elseif ($lomba == 'ffr') {
-                $linkGrup = 'https://chat.whatsapp.com/HgzpB1XqaWoFQZFdVvBgEL';
+                $linkGrup = 'https://chat.whatsapp.com/ClxKoYRudmaBpxuP12fuih?mode=ems_copy_t';
             }
             ?>
 
